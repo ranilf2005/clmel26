@@ -1,4 +1,5 @@
 site_name: Cisco Secure Firewall Enablement Workshop
+site_url: https://ranilf2005.github.io/clmel26/
 site_description: >-
   Cisco Secure Firewall (FTD) Enablement Workshop — packet flow, NAT, Access
   Control Policies, VPN, IPS and deep-dive diagnostics.

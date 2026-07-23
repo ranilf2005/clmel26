@@ -3,7 +3,11 @@
 A [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) recreation
 of the Cisco Secure Firewall (FTD) Enablement Workshop.
 
-## Local preview
+## Local preview (optional)
+
+Local tooling is **not** required — the site is built and hosted by GitHub Pages.
+If you still want to preview locally, install the dependencies into a throwaway
+virtual environment:
 
 ```bash
 pip install -r requirements.txt
@@ -50,7 +54,13 @@ pwsh ./scripts/download-images.ps1
 
 ## Deploy
 
-Pushing to the `main` branch triggers the GitHub Actions workflow
-(`.github/workflows/deploy.yml`), which builds the site and publishes it to
-GitHub Pages. In the repository settings, set **Settings → Pages → Build and
-deployment → Source** to **GitHub Actions**.
+This site is published with **GitHub Pages** and built entirely on GitHub — no
+local tooling required. Every push to the `main` branch triggers the GitHub
+Actions workflow (`.github/workflows/deploy.yml`), which installs the
+dependencies, builds the site, and deploys it to GitHub Pages.
+
+Live site: <https://ranilf2005.github.io/clmel26/>
+
+The workflow enables GitHub Pages automatically. If the `github-pages`
+environment is protected, approve the first deployment (or set
+**Settings → Pages → Source** to **GitHub Actions**).

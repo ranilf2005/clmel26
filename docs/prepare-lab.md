@@ -3,6 +3,8 @@
 This scenario describes how to set up and access all the devices in this lab
 environment so that it supports subsequent scenarios and tasks.
 
+![alt text](images/prepare-lab/prepare-lab.png)
+
 ## How to access lab devices via Web Browser
 
 1. On the dCloud topology page, click the LAN-B Kali PC icon. Then, on the

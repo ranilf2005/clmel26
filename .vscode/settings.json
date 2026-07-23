@@ -1,0 +1,19 @@
+{
+  // Paste or drag an image into any Markdown file under docs/ and VS Code will
+  // copy it into an "images/<page-name>/" folder next to that page, then insert
+  // a correct relative  ![](images/<page-name>/<file>)  link automatically.
+  // Smart filename: the image is named after the page (not the generic "image.png"),
+  // and repeats auto-increment:
+  //   paste into  docs/lab-tasks.md  ->  docs/images/lab-tasks/lab-tasks.png
+  //   next pastes ->  lab-tasks-1.png,  lab-tasks-2.png,  ...
+  "markdown.copyFiles.destination": {
+    "/docs/**/*": "images/${documentBaseName}/${documentBaseName}.${fileExtName}"
+  },
+
+  // If a file with the same name already exists, append -1, -2, ... instead of overwriting.
+  "markdown.copyFiles.overwriteBehavior": "nameIncrementally",
+
+  // If you later move or rename an image (e.g. into a sub-section folder) or a page,
+  // VS Code offers to update all Markdown links to it so nothing breaks.
+  "markdown.updateLinksOnFileMove.enabled": "prompt"
+}

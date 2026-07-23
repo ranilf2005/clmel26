@@ -1,0 +1,65 @@
+site_name: Cisco Secure Firewall Enablement Workshop
+site_description: >-
+  Cisco Secure Firewall (FTD) Enablement Workshop — packet flow, NAT, Access
+  Control Policies, VPN, IPS and deep-dive diagnostics.
+site_author: Cisco
+copyright: Copyright &copy; 2025 Cisco
+
+theme:
+  name: material
+  language: en
+  palette:
+    scheme: slate
+    primary: black
+    accent: cyan
+  font:
+    text: Inter
+    code: Roboto Mono
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top
+    - navigation.footer
+    - navigation.indexes
+    - toc.follow
+    - content.code.copy
+    - content.code.annotate
+    - search.highlight
+    - search.suggest
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+plugins:
+  - search
+
+nav:
+  - Home: index.md
+  - Overview: overview.md
+  - "1-Prepare the Lab Environment": prepare-lab.md
+  - "2-Lab Tasks": lab-tasks.md
+  - Theory: theory.md
+  - Deep-dive diagnostics: deep-dive-diagnostics.md
+  - Conclusion: conclusion.md
+  - Topologies: topologies.md

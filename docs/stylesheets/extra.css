@@ -1,0 +1,115 @@
+/* ============================================================
+   Cisco Secure Firewall Enablement Workshop
+   Cisco-branded dark theme (colour only — no images)
+   ============================================================ */
+
+:root {
+  --cisco-blue:      #00bceb;
+  --cisco-blue-dark: #049fd9;
+  --cisco-navy:      #0d274d;
+  --cisco-navy-deep: #041e42;
+  --cisco-midnight:  #00142b;
+  --cisco-slate:     #0a2540;
+}
+
+/* --- Cisco colour overrides for the dark (slate) scheme --- */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color:        var(--cisco-navy);
+  --md-primary-fg-color--light: var(--cisco-slate);
+  --md-primary-fg-color--dark:  var(--cisco-navy-deep);
+  --md-accent-fg-color:         var(--cisco-blue);
+
+  --md-default-bg-color:        var(--cisco-midnight);
+  --md-typeset-a-color:         var(--cisco-blue);
+
+  --md-footer-bg-color:         var(--cisco-navy-deep);
+  --md-footer-bg-color--dark:   var(--cisco-midnight);
+}
+
+/* Header + tabs gradient */
+.md-header,
+.md-tabs {
+  background: linear-gradient(90deg, var(--cisco-navy-deep) 0%, var(--cisco-navy) 100%);
+}
+
+[data-md-color-scheme="slate"] .md-typeset a:hover {
+  color: var(--cisco-blue-dark);
+}
+
+/* ---------------- Home hero (no images, colour only) -------------- */
+.cisco-hero {
+  margin: -1.5rem -1.5rem 2rem -1.5rem;
+  padding: 5rem 1.5rem 5.5rem 1.5rem;
+  text-align: center;
+  color: #ffffff;
+  background:
+    radial-gradient(1200px 480px at 50% -10%, rgba(0, 188, 235, 0.25), transparent 60%),
+    linear-gradient(160deg, var(--cisco-midnight) 0%, var(--cisco-navy) 55%, var(--cisco-navy-deep) 100%);
+  border-bottom: 3px solid var(--cisco-blue);
+}
+
+.cisco-hero h1 {
+  font-size: 2.6rem;
+  font-weight: 800;
+  line-height: 1.15;
+  color: #ffffff;
+  margin: 0 auto 1rem auto;
+  max-width: 24ch;
+}
+
+.cisco-hero p {
+  font-size: 1.05rem;
+  color: #c7d3e3;
+  max-width: 62ch;
+  margin: 0 auto 2rem auto;
+}
+
+.cisco-hero .md-button {
+  border-radius: 6px;
+  padding: 0.7rem 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+.cisco-hero .md-button--primary {
+  background-color: var(--cisco-blue);
+  border-color: var(--cisco-blue);
+  color: #00263f;
+}
+
+.cisco-hero .md-button--primary:hover {
+  background-color: var(--cisco-blue-dark);
+  border-color: var(--cisco-blue-dark);
+  color: #ffffff;
+}
+
+/* ---------------- Feature grid on the home page ------------------- */
+.cisco-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.cisco-card {
+  border: 1px solid rgba(0, 188, 235, 0.25);
+  border-radius: 8px;
+  padding: 1.2rem 1.3rem;
+  background: rgba(13, 39, 77, 0.35);
+}
+
+.cisco-card h3 {
+  margin-top: 0;
+  color: var(--cisco-blue);
+}
+
+/* ---------------- Section headings -------------------------------- */
+[data-md-color-scheme="slate"] .md-typeset h1,
+[data-md-color-scheme="slate"] .md-typeset h2 {
+  color: #eaf2fb;
+}
+
+[data-md-color-scheme="slate"] .md-typeset h2 {
+  border-bottom: 1px solid rgba(0, 188, 235, 0.25);
+  padding-bottom: 0.3rem;
+}
